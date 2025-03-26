@@ -1720,20 +1720,28 @@ body {
 
 /* Sidebar Collapse Button for Location View */
 .sidebar-v2-location #sidebar-v2 .hl_collapse-button {
-  background: var(--sidebar-collapse-button-background) !important;
-  color: var(--sidebar-collapse-icon-arrow-color) !important;
+  background: linear-gradient(135deg, #0e3253 0%, #1898b2 50%, #18a5c2 75%, #0e3253 100%) !important;
+  color: #fff !important;
+  padding: 10px !important;
+  border: 1px solid rgba(219, 219, 219, 0.44) !important;
 }
 
 /* Sidebar Top Dropdown Menu for Agency View */
 /* (This rule can be left as is or merged with the location switcher rule above if desired) */
 .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 {
-  background-color: var(--sidebar-dropdown-menu-background) !important;
+  background: linear-gradient(135deg, #0e3253 0%, #1898b2 50%, #18a5c2 75%, #0e3253 100%) !important;
+  color: #fff !important;
+  padding: 10px !important;
+  border: 1px solid rgba(219, 219, 219, 0.44) !important;
 }
 
 
 .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 {
     /* Sidebar - Top Dropdown Menu - Sub Account View */
-    background-color: var(--sidebar-dropdown-menu-background) !important;
+  background: linear-gradient(135deg, #0e3253 0%, #1898b2 50%, #18a5c2 75%, #0e3253 100%) !important;
+  color: #fff !important;
+  padding: 10px !important;
+  border: 1px solid rgba(219, 219, 219, 0.44) !important;
 }
 
 .sidebar-v2-location #sidebar-v2 .hl_nav-header {
