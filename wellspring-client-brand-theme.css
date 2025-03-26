@@ -3,31 +3,32 @@
 /** @format */
 :root {
     /* Master Colors for Buttons and Icons */
-    --master-primary-color: #56b641 !important;
+    /* (Using blues/teals from your Wellspring Visionary logo) */
+    --master-primary-color: #0e3253 !important; /* Dark Navy/Blue */
     --master-second-color: #262626 !important;
-    --master-green-color: #56b641 !important;
+    --master-green-color: #1898b2 !important; /* Teal for "green" button usage */
     --master-red-color: #c74c4c !important;
-    --master-blue-color: #2f63db !important;
+    --master-blue-color: #2f63db !important; /* You can replace if you want a teal-based "blue" */
     --master-orange-color: #f3852e !important;
     --master-purple-color: #b889df !important;
     --master-black-color: #262626 !important;
     --master-white-color: #fff !important;
     --master-font-color-body: #262626 !important;
     --master-font-color-body-secondary: #3f3f3f !important;
-    --master-font-color-hyperlink: #2f63db !important;
-    --master-font-color-hyperlink-hover: #366ce9 !important;
+    --master-font-color-hyperlink: #1898b2 !important; /* Teal as hyperlink */
+    --master-font-color-hyperlink-hover: #18a5c2 !important; /* Hover a bit lighter/brighter */
     --master-table-sort-color: var(--master-primary-color) !important;
     --master-table-font-color: var(--master-white-color) !important;
     --master-border-line-color-primary: var(--master-primary-color) !important;
     --blue: var(--master-font-color-hyperlink) !important;
     --master-button-shadow-primary: 0px 2px 3px 0px #32323270,
         0px 2px 3px 0px #32323247, 0px 0px 1px 0px #32323247 !important;
+
     /* Master Primary Button */
-    --master-primary-button-background-color: var(
-        --master-primary-color
-    ) !important;
-    --master-primary-button-background-color-hover: #67ce50 !important;
-    --master-primary-button-background-color-non-active: #56b64169 !important;
+    --master-primary-button-background-color: var(--master-primary-color) !important;
+    /* A hover color slightly lighter or brighter than #0e3253 */
+    --master-primary-button-background-color-hover: #13537b !important;
+    --master-primary-button-background-color-non-active: #0e325369 !important;
     --master-primary-button-border: 2px solid var(--master-primary-color) !important;
     --master-primary-button-border-hover: 2px solid
         var(--master-primary-button-background-color-hover) !important;
@@ -36,6 +37,7 @@
     --master-primary-button-font-color-hover: #fff !important;
     --master-primary-button-border-radius: 45px !important;
     --master-primary-button-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%) !important;
+
     /* Master secondary Button */
     --master-secondary-button-background-color: #272727 !important;
     --master-secondary-button-background-color-hover: #282828 !important;
@@ -49,17 +51,17 @@
     --master-secondary-button-shadow: 0px 0px 12px #ffffff00 !important;
     --master-secondary-button-shadow-hover: 0px 0px 9px #fff8df,
         0px 0px 9px #fff4cb !important;
-    /* Master Green Button Style */
-    --master-green-button-background-color: var(
-        --master-green-color
-    ) !important;
-    --master-green-button-background-color-hover: #67ce50 !important;
+
+    /* Master Green Button Style (using teal) */
+    --master-green-button-background-color: var(--master-green-color) !important;
+    --master-green-button-background-color-hover: #18a5c2 !important; 
     --master-green-button-border: var(--master-green-color) !important;
-    --master-green-button-border-hover: #67ce50 !important;
+    --master-green-button-border-hover: #18a5c2 !important;
     --master-green-button-font-color: #fff !important;
     --master-green-button-font-color-hover: #fff !important;
     --master-green-button-border-radius: 45px !important;
     --master-green-button-shadow-hover: 0 2px 5px 0 rgb(0 0 0 / 20%) !important;
+
     /* Master Red Button Style */
     --master-red-button-background-color: var(--master-red-color) !important;
     --master-red-button-background-color-hover: #da5555 !important;
@@ -69,6 +71,7 @@
     --master-red-button-font-color-hover: #fff !important;
     --master-red-button-border-radius: 45px !important;
     --master-red-button-shadow-hover: 0 2px 5px 0 rgb(0 0 0 / 20%) !important;
+
     /* Activity Panel - Conversations */
     --activity-panel-background: #fff !important;
     --activity-panel-padding: 10px 10px 10px 40px !important;
@@ -76,25 +79,24 @@
     --activity-panel-border: 1px solid #cdcdcd !important;
     --activity-panel-shadow: rgb(0 0 0 / 48%) 0px 18px 11px -20px !important;
     --activity-panel-margin-bottom: 35px !important;
+
     /* Agency Backend - Dashboard */
     --agency-dashboard-accounts-footer-panel-color: #f9f9f9 !important;
-    --agency-dashboard-saas-mode-banner-background-gradient-left: #3dac77 !important;
-    --agency-dashboard-saas-mode-banner-background-gradient-right: #3dac77 !important;
+    --agency-dashboard-saas-mode-banner-background-gradient-left: #1898b2 !important; 
+    --agency-dashboard-saas-mode-banner-background-gradient-right: #1898b2 !important;
     --agency-dashboard-saas-mode-banner-font-color: #fff !important;
-    --agency-dashboard-saas-mode-banner-updates-button-background: #3dac77f5 !important;
+    --agency-dashboard-saas-mode-banner-updates-button-background: #1898b2f5 !important;
     --agency-dashboard-saas-mode-banner-updates-button-border: 2px dashed white !important;
     --agency-dashboard-saas-mode-banner-updates-button-font-color: white !important;
     --agency-dashboard-saas-mode-banner-learn-more-button-background-color: white !important;
-    --agency-dashboard-saas-mode-banner-learn-more-button-font-color: var(
-        --agency-dashboard-saas-mode-banner-background-gradient-left
-    ) !important;
-    --agency-dashboard-saas-mode-banner-learn-more-button-font-color: #3dac77 !important;
-    --agency-dashboard-saas-mode-banner-vertical-border-line: 1px solid #3dac77 !important;
+    --agency-dashboard-saas-mode-banner-learn-more-button-font-color: #1898b2 !important;
+    --agency-dashboard-saas-mode-banner-vertical-border-line: 1px solid #1898b2 !important;
     --agency-cards-rlm-text: var(--master-green-color) !important;
     --agency-cards-mrr-text: var(--master-blue-color) !important;
     --agency-cards-cis-text: var(--master-purple-color) !important;
     --agency-cards-nctm-text: var(--master-purple-color) !important;
     --agency-cards-upper-icons: var(--master-second-color) !important;
+
     /* Appointment Panels */
     --appointments-panel-background: #fff !important;
     --appointments-panel-border: var(--activity-panel-border) !important;
@@ -103,6 +105,7 @@
     --appointments-trash-can-color: var(--master-red-color) !important;
     --appointments-edit-icon-color: var(--master-green-color) !important;
     --appointments-panel-shadow: var(--activity-panel-shadow) !important;
+
     /* Audio Player Styles */
     --audio-player-background-color: #fff !important;
     --audio-player-button-colors: var(--master-primary-color) !important;
@@ -112,9 +115,11 @@
     --audio-player-progress-bar: #404040 !important;
     --audio-player-progress-bar-background: #e1e1e1 !important;
     --audio-player-inner-borderline: 1px solid #ffffff !important;
+
     /* Avatar Circle Styles */
     --avatar-circle-background-color: var(--master-primary-color) !important;
     --avatar-font-color: #fff !important;
+
     /* Misc Items */
     --folders-shadow: rgb(50 50 93 / 20%) 0px 2px 2px -1px,
         rgb(0 0 0 / 26%) 0px 1px 1px -1px !important;
@@ -124,57 +129,39 @@
     --button-dropdown-font-color-dark: #262626 !important;
     --clear-background: #0000 !important;
     --trash-can-color: var(--master-red-color) !important;
+
     /* Badge Colors Styles */
     --badge-new-badge-background: var(--master-green-color) !important;
     --badge-new-badge-border: var(--badge-new-badge-background) !important;
     --badge-new-badge-font-color: var(--master-white-color) !important;
+
     /* Button - Add/Update */
-    --button-add-update-background: var(
-        --master-green-button-background-color
-    ) !important;
-    --button-add-update-background-hover: var(
-        --master-green-button-background-color-hover
-    ) !important;
+    --button-add-update-background: var(--master-green-button-background-color) !important;
+    --button-add-update-background-hover: var(--master-green-button-background-color-hover) !important;
     --button-add-update-border: 2px solid var(--master-green-button-border) !important;
-    --button-add-update-border-hover: 2px solid
-        var(--master-green-button-border-hover) !important;
-    --button-add-update-font-color: var(
-        --master-green-button-font-color
-    ) !important;
-    --button-add-update-font-color-hover: var(
-        --master-green-button-font-color-hover
-    ) !important;
-    --button-radius-add-update-button: var(
-        --master-green-button-border-radius
-    ) !important;
+    --button-add-update-border-hover: 2px solid var(--master-green-button-border-hover) !important;
+    --button-add-update-font-color: var(--master-green-button-font-color) !important;
+    --button-add-update-font-color-hover: var(--master-green-button-font-color-hover) !important;
+    --button-radius-add-update-button: var(--master-green-button-border-radius) !important;
+
     /* Back Button Style */
-    --button-background-primary: var(
-        --master-red-button-background-color
-    ) !important;
+    --button-background-primary: var(--master-red-button-background-color) !important;
     --button-back-background: #f1f1f1 !important;
-    --button-back-background-hover: var(
-        --master-red-button-background-color-hover
-    ) !important;
+    --button-back-background-hover: var(--master-red-button-background-color-hover) !important;
     --button-back-border: 1px solid #e1e1e1 !important;
     --button-back-border-hover: 1px solid var(--master-red-color) !important;
     --button-back-font-color: var(--master-red-button-font-color) !important;
     --button-back-font-color-hover: var(--master-white-color) !important;
     --button-radius-back: 5px !important;
+
     /* Button - Cancel/Clear Style */
-    --button-cancel-background: var(
-        --master-red-button-background-color
-    ) !important;
-    --button-cancel-background-hover: var(
-        --master-red-button-background-color-hover
-    ) !important;
+    --button-cancel-background: var(--master-red-button-background-color) !important;
+    --button-cancel-background-hover: var(--master-red-button-background-color-hover) !important;
     --button-cancel-border: var(--master-red-button-border) !important;
-    --button-cancel-border-hover: var(
-        --master-red-button-border-hover
-    ) !important;
+    --button-cancel-border-hover: var(--master-red-button-border-hover) !important;
     --button-cancel-font-color: var(--master-red-button-font-color) !important;
-    --button-cancel-font-color-hover: var(
-        --master-red-button-font-color
-    ) !important;
+    --button-cancel-font-color-hover: var(--master-red-button-font-color) !important;
+
     /* Button - Small Nav Buttons Style */
     --button-conversation-panel-background: #262626 !important;
     --button-conversation-panel-background-hover: #262626 !important;
@@ -189,81 +176,45 @@
     --button-conversation-panel-padding: 3px 10px !important;
     --button-conversation-panel-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%),
         0 2px 10px 0 rgb(0 0 0 / 10%) !important;
-    /* Continue Button Green */
-    --button-continue-background: var(
-        --master-green-button-background-color
-    ) !important;
-    --button-continue-background-hover: var(
-        --master-green-button-background-color-hover
-    ) !important;
+
+    /* Continue Button Green (Teal) */
+    --button-continue-background: var(--master-green-button-background-color) !important;
+    --button-continue-background-hover: var(--master-green-button-background-color-hover) !important;
     --button-continue-border: 2px solid var(--master-green-button-border) !important;
-    --button-continue-border-hover: 2px solid
-    #67ce50 !important;
-    --button-continue-border-hover-reply: 1px solid
-    #67ce50 !important;
-    --button-continue-font-color: var(
-        --master-green-button-font-color
-    ) !important;
-    --button-continue-font-color-hover: var(
-        --master-green-button-font-color-hover
-    ) !important;
-    --button-radius-continue: var(
-        --master-green-button-border-radius
-    ) !important;
+    --button-continue-border-hover: 2px solid #18a5c2 !important; 
+    --button-continue-border-hover-reply: 1px solid #18a5c2 !important;
+    --button-continue-font-color: var(--master-green-button-font-color) !important;
+    --button-continue-font-color-hover: var(--master-green-button-font-color-hover) !important;
+    --button-radius-continue: var(--master-green-button-border-radius) !important;
+
     /* Button - Disconnect Style */
-    --button-disconnect-background: var(
-        --master-red-button-background-color
-    ) !important;
-    --button-disconnect-background-hover: var(
-        --master-red-button-background-color-hover
-    ) !important;
+    --button-disconnect-background: var(--master-red-button-background-color) !important;
+    --button-disconnect-background-hover: var(--master-red-button-background-color-hover) !important;
     --button-disconnect-border: var(--master-red-button-border) !important;
-    --button-disconnect-border-hover: var(
-        --master-red-button-border-hover
-    ) !important;
-    --button-disconnect-border-radius: var(
-        --master-red-button-border-radius
-    ) !important;
-    --button-disconnect-font-color: var(
-        --master-red-button-font-color
-    ) !important;
-    --button-disconnect-font-color-hover: var(
-        --master-red-button-font-color-hover
-    ) !important;
+    --button-disconnect-border-hover: var(--master-red-button-border-hover) !important;
+    --button-disconnect-border-radius: var(--master-red-button-border-radius) !important;
+    --button-disconnect-font-color: var(--master-red-button-font-color) !important;
+    --button-disconnect-font-color-hover: var(--master-red-button-font-color-hover) !important;
+
     /* Button - Large Style */
-    --button-large-background: var(
-        --master-primary-button-background-color
-    ) !important;
-    --button-large-background-hover: var(
-        --master-primary-button-background-color-hover
-    ) !important;
+    --button-large-background: var(--master-primary-button-background-color) !important;
+    --button-large-background-hover: var(--master-primary-button-background-color-hover) !important;
     --button-large-border: var(--master-primary-button-border) !important;
-    --button-large-border-hover: var(
-        --master-primary-button-border-hover
-    ) !important;
+    --button-large-border-hover: var(--master-primary-button-border-hover) !important;
     --button-large-font-color: #fff !important;
     --button-large-font-color-hover: #fff !important;
-    --button-large-radius-button: var(
-        --master-primary-button-border-radius
-    ) !important;
-    /* Let's Start Green Button */
-    --button-lets-start-background-color: var(
-        --master-green-button-background-color
-    ) !important;
-    --button-lets-start-background-color-hover: var(
-        --master-green-button-background-color-hover
-    ) !important;
+    --button-large-radius-button: var(--master-primary-button-border-radius) !important;
+
+    /* Let's Start Green Button (Teal) */
+    --button-lets-start-background-color: var(--master-green-button-background-color) !important;
+    --button-lets-start-background-color-hover: var(--master-green-button-background-color-hover) !important;
     --button-lets-start-border: 2px solid var(--master-green-button-border) !important;
-    --button-lets-start-border-hover: 2px solid
-        var(--master-green-button-border-hover) !important;
-    --button-lets-start-font-color: var(
-        --master-green-button-font-color
-    ) !important;
-    --button-lets-start-font-color-hover: var(
-        --master-green-button-font-color-hover
-    ) !important;
+    --button-lets-start-border-hover: 2px solid var(--master-green-button-border-hover) !important;
+    --button-lets-start-font-color: var(--master-green-button-font-color) !important;
+    --button-lets-start-font-color-hover: var(--master-green-button-font-color-hover) !important;
     --button-lets-start-border-radius: 45px !important;
     --button-lets-start-shadow-hover: 0 2px 5px 0 rgb(0 0 0 / 20%) !important;
+
     /* Button - Small Nav Buttons Style */
     --button-navtab-background: #262626 !important;
     --button-navtab-background-hover: #303030 !important;
@@ -278,8 +229,8 @@
     --button-navtab-padding: 3px 10px !important;
     --button-navtab-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%),
         0 2px 10px 0 rgb(0 0 0 / 10%) !important;
-    /* Button - Small Nav Buttons Style */
     --button-navtab-shadow-non-active: none !important;
+
     /* Button-Radius All Buttons */
     --button-radius-1: 45px !important;
     --button-radius-small-button: 50px !important;
@@ -288,8 +239,10 @@
     --button-radius-navtab-button: 45px !important;
     --button-radius-dropdown: 45px !important;
     --button-radius-dropdown-input: 45px !important;
+
     /* Slider Button On and Off Style */
     --button-slider-on-background: var(--master-green-color) !important;
+
     /* Selector Button Styles */
     --button-selector-contacts-background: #f1f1f1 !important;
     --button-selector-contacts-background-hover: #fbfbfb !important;
@@ -298,111 +251,76 @@
     --button-selector-contacts-border: 1px solid #dedede !important;
     --button-selector-contacts-border-hover: 1px solid #d5d5d5 !important;
     --button-selector-contacts-shadow: 0px 0px 5px 0px #56565642 !important;
+
     /* Button - Settings Button Style */
     --button-settings-background-active: #262626 !important;
     --button-settings-background-non-active: #e0e0e0 !important;
     --button-settings-background-hover: #282828 !important;
-    --button-settings-border-active: 2px solid
-        var(---button-settings-background-active) !important;
-    --button-settings-border-non-active: 2px solid
-        var(--master-primary-button-border-non-active) !important;
-    --button-settings-border-hover: 2px solid
-        var(--master-primary-button-border-hover) !important;
+    --button-settings-border-active: 2px solid var(---button-settings-background-active) !important;
+    --button-settings-border-non-active: 2px solid var(--master-primary-button-border-non-active) !important;
+    --button-settings-border-hover: 2px solid var(--master-primary-button-border-hover) !important;
     --button-settings-font-color: var(--master-white-color) !important;
     --button-settings-font-color-hover: var(--master-white-color) !important;
     --button-settings-font-color-non-active: #2a2a2a !important;
-    --button-settings-border-radius: var(
-        --master-primary-button-border-radius
-    ) !important;
-    --button-settings-new-highlight-background: var(
-        --master-green-color
-    ) !important;
-    --button-settings-new-highlight-font-color: var(
-        --master-white-color
-    ) !important;
+    --button-settings-border-radius: var(--master-primary-button-border-radius) !important;
+    --button-settings-new-highlight-background: var(--master-green-color) !important;
+    --button-settings-new-highlight-font-color: var(--master-white-color) !important;
+
     /* Button - Small Style */
-    --button-small-background: var(
-        --master-primary-button-background-color
-    ) !important;
-    --button-small-background-hover: var(
-        --master-primary-button-background-color-hover
-    ) !important;
+    --button-small-background: var(--master-primary-button-background-color) !important;
+    --button-small-background-hover: var(--master-primary-button-background-color-hover) !important;
     --button-small-border: var(--master-primary-button-border) !important;
-    --button-small-border-hover: var(
-        --master-primary-button-border-hover
-    ) !important;
+    --button-small-border-hover: var(--master-primary-button-border-hover) !important;
     --button-small-font-color: #fff !important;
     --button-small-font-color-hover: #fff !important;
     --button-small-border-radius: 5px !important;
     --split-button-border: 1px solid #ffffff37 !important;
+
     /* Button - Conversations Scroll Button */
-    --button-scroll-conversations-background: var(
-        --master-primary-color
-    ) !important;
-    --button-scroll-conversations-background-hover: var(
-        --master-green-color
-    ) !important;
-    --button-scroll-conversations-border: var(
-        --master-primary-color
-    ) !important;
-    --button-scroll-conversations-border-hover: var(
-        --master-green-color
-    ) !important;
+    --button-scroll-conversations-background: var(--master-primary-color) !important;
+    --button-scroll-conversations-background-hover: var(--master-green-color) !important;
+    --button-scroll-conversations-border: var(--master-primary-color) !important;
+    --button-scroll-conversations-border-hover: var(--master-green-color) !important;
     --button-scroll-conversations-font-color: #fff !important;
     --button-scroll-conversations-font-color-hover: #fff !important;
     --button-scroll-conversations-shadow-hover: #09090938 0px 0px 5px !important;
+
     /* Button - Task Buttons Conversations Page */
     --button-tasks-background: var(--dashboard-panels-background) !important;
-    --button-tasks-background-hover: var(
-        --dashboard-panels-background
-    ) !important;
+    --button-tasks-background-hover: var(--dashboard-panels-background) !important;
     --button-tasks-border-color: 2px solid var(--dashboard-panels-background) !important;
-    --button-tasks-border-color-hover: 2px solid
-        var(--dashboard-panels-background) !important;
+    --button-tasks-border-color-hover: 2px solid var(--dashboard-panels-background) !important;
     --button-tasks-font-color: #262626 !important;
     --button-tasks-font-color-hover: #262626 !important;
     --button-tasks-arrow-color: var(--dashboard-button-font-color) !important;
-    --button-tasks-arrow-color-hover: var(
-        --dashboard-button-font-color
-    ) !important;
+    --button-tasks-arrow-color-hover: var(--dashboard-button-font-color) !important;
     --button-tasks-border-radius: 5px !important;
+
     /* Top Nav Bar Buttons in Upper Corner */
-    --button-top-navbar-background: var(
-        --master-secondary-button-background-color
-    ) !important;
-    --button-top-navbar-background-hover: var(
-        --master-secondary-button-background-color-hover
-    ) !important;
+    --button-top-navbar-background: var(--master-secondary-button-background-color) !important;
+    --button-top-navbar-background-hover: var(--master-secondary-button-background-color-hover) !important;
     --button-top-navbar-border: 2px solid var(--master-white-color) !important;
     --button-top-navbar-border-hover: 2px solid var(--master-white-color) !important;
     --button-top-navbar-font-color: var(--master-white-color) !important;
     --button-top-navbar-font-color-hover: var(--master-white-color) !important;
-    --button-top-navbar-shadow: var(
-        --master-secondary-button-shadow
-    ) !important;
+    --button-top-navbar-shadow: var(--master-secondary-button-shadow) !important;
     --button-top-navbar-shadow-hover: 0px 0px 9px #f3f3f3, 0px 0px 9px #ebebeb82 !important;
+
     /* Borderlines */
     --border-bottom-dark-grey: #d9d9d9 !important;
+
     /* Calendar - Available Hours and Times */
-    --calendar-available-days-background-active: var(
-        --master-primary-color
-    ) !important;
-    --calendar-available-days-background-hover: var(
-        --master-primary-color
-    ) !important;
+    --calendar-available-days-background-active: var(--master-primary-color) !important;
+    --calendar-available-days-background-hover: var(--master-primary-color) !important;
     --calendar-available-days-background-non-active: #ebebeb !important;
     --calendar-available-days-font-color-non-active: #606060 !important;
-    --calendar-available-days-font-color-active: var(
-        --master-white-color
-    ) !important;
-    --calendar-available-days-font-color-hover: var(
-        --master-white-color
-    ) !important;
+    --calendar-available-days-font-color-active: var(--master-white-color) !important;
+    --calendar-available-days-font-color-hover: var(--master-white-color) !important;
     --selector-dropdown-active: #b5b5b5 !important;
     --selector-dropdown-hover: #e1e1e1 !important;
+
     /* Calendar - General Calendar Styles */
     --calendar-link-color: var(--master-blue-color) !important;
-    /* Panels Link Color */
     --calendar-header-color: #eaeaea !important;
     --calendar-header-font-color: var(--master-font-color-body) !important;
     --calendar-button-border: 1px solid #eaeaea !important;
@@ -413,16 +331,13 @@
     --calendar-button-font-hover: var(--master-font-color-body) !important;
     --calendar-day-active: var(--master-primary-color) !important;
     --calendar-day-active-range: #c5c5c5 !important;
-    --calendar-day-active-range-font-color: var(
-        --master-font-color-body
-    ) !important;
+    --calendar-day-active-range-font-color: var(--master-font-color-body) !important;
     --calendar-checkmark-button-background: #fff !important;
-    --calendar-checkmark-button-background-hover: var(
-        --master-green-color
-    ) !important;
+    --calendar-checkmark-button-background-hover: var(--master-green-color) !important;
     --launch-pad-panel-border: var(--master-primary-color) !important;
     --launch-pad-panel-border-sm: #e3dab657 !important;
     --calendar-shadow: 0px 1px 13px 0px #00000038, 0px 1px 20px 0px #00000021 !important;
+
     /* Calendar - Widget Calendar Page */
     --calendar-widget-header-background: linear-gradient(
         0deg,
@@ -431,178 +346,148 @@
     ) !important;
     --calendar-widget-header-border-radius: 5px !important;
     --calendar-widget-header-border: 1px solid #e7e7e7 !important;
-    --calendar-widget-header-shadow: rgb(0 0 0 / 48%) 0px 18px 11px -20px;
+    --calendar-widget-header-shadow: rgb(0 0 0 / 48%) 0px 18px 11px -20px !important;
     --calendar-widget-calendar-boxes-background: #fbfbfb !important;
     --calendar-widget-new-calendar-background: #fff !important;
     --calendar-widget-new-calendar-border: 2px dashed #d2d2d2 !important;
-    --calendar-widget-new-calendar-font-color: var(
-        --master-green-color
-    ) !important;
-    --calendar-widget-main-background: var(
-        --dashboard-panels-background
-    ) !important;
+    --calendar-widget-new-calendar-font-color: var(--master-green-color) !important;
+    --calendar-widget-main-background: var(--dashboard-panels-background) !important;
     --calendar-widget-rounded-circle-color: #242424 !important;
     --calendar-widget-edit-calendar-button-icon: url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/icons/icon-ellipsis.png)
         no-repeat !important;
+
     /* Campaigns Page Styles */
     --campaigns-panel-top-panel-background: #fff !important;
     --campaigns-panel-bottom-panel-background: #f3f3f3 !important;
     --campaigns-panel-border: var(--panels-border) !important;
-    --campaigns-minutes-panel-background: var(
-        --master-primary-color
-    ) !important;
+    --campaigns-minutes-panel-background: var(--master-primary-color) !important;
     --campaigns-minutes-panel-border: 1px solid var(--master-primary-color) !important;
     --campaigns-minutes-font-color: var(--button-small-font-color) !important;
-    --campaigns-minutes-panel-connecting-borderline-color: var(
-        --master-primary-color
-    ) !important;
-    --campaigns-plus-icon-background: var(
-        --button-continue-background
-    ) !important;
+    --campaigns-minutes-panel-connecting-borderline-color: var(--master-primary-color) !important;
+    --campaigns-plus-icon-background: var(--button-continue-background) !important;
     --campaigns-plus-icon-color: #fff !important;
     --campaigns-device-icon-color: #3e3e3e !important;
+
     /* Conversation Bubble Styles */
     --conversation-bubble-left-side: var(--master-primary-color) !important;
-    /* Update Custom Color */
     --conversation-bubble-left-side-font-color: #fff !important;
-    /* Update Custom Color - Dark or white */
-    --conversation-bubble-left-side-font-color-hyperlink: var(
-        --conversation-bubble-left-side-font-color
-    ) !important;
-    /*Same as above */
+    --conversation-bubble-left-side-font-color-hyperlink: var(--conversation-bubble-left-side-font-color) !important;
     --conversation-bubble-right-side: #ebebeb !important;
-    /* Update Custom Color */
-    --conversation-bubble-right-side-font-color: var(
-        --master-font-color-body
-    ) !important;
-    /* Update Custom Color - Dark or white */
-    --conversation-bubble-right-side-font-color-hyperlink: var(
-        --conversation-bubble-right-side-font-color
-    ) !important;
-    /*Same as above */
-    /* Color Charts Colors */
-    --charts-color-0: #6dc45a !important;
-    --charts-color-1: #63b451 !important;
-    --charts-color-2: #59a448 !important;
-    --charts-color-3: #4e943f !important;
-    --charts-color-4: #448436 !important;
-    --charts-color-5: #3a732d !important;
-    --charts-color-6: #306324 !important;
-    --charts-color-7: #25531b !important;
-    --charts-color-8: #1b4312 !important;
-    --charts-color-9: #113309 !important;
-    --charts-color-10: #0e2c08 !important;
-    --charts-color-11: #0b2406 !important;
-    --charts-color-12: #061403 !important;
-    --charts-color-13: #020701 !important;
-    /* Charts Th Td */
+    --conversation-bubble-right-side-font-color: var(--master-font-color-body) !important;
+    --conversation-bubble-right-side-font-color-hyperlink: var(--conversation-bubble-right-side-font-color) !important;
+
+    /* Color Charts Colors (example teal-based progression) */
+    --charts-color-0: #6ac5e3 !important;
+    --charts-color-1: #5abbd9 !important;
+    --charts-color-2: #4ab1cf !important;
+    --charts-color-3: #3aa7c5 !important;
+    --charts-color-4: #2a9dbb !important;
+    --charts-color-5: #1898b2 !important;
+    --charts-color-6: #168aa3 !important;
+    --charts-color-7: #137b94 !important;
+    --charts-color-8: #106d86 !important;
+    --charts-color-9: #0d5e77 !important;
+    --charts-color-10: #0b4f68 !important;
+    --charts-color-11: #083159 !important;
+    --charts-color-12: #042249 !important;
+    --charts-color-13: #01153b !important;
+
     --charts-background: #fdfdfd !important;
     --charts-background-active-color: #f6f6f7 !important;
     --chart-grid-lines: #eeeeee !important;
     --chart-axis-lines: #ebebeb !important;
+
     /* Check box Button On and Off Styles */
-    --checkbox-checked-background-color: var(
-        --button-slider-on-background
-    ) !important;
+    --checkbox-checked-background-color: var(--button-slider-on-background) !important;
     --checkbox-border-color: 2px solid #d9d9d9 !important;
     --checkbox-unchecked-background-color: #ff !important;
+
     /* Conversations Boxes */
     --conversations-boxes-background-color-active: #f1f1f1 !important;
-    --conversations-boxes-background-color-hover: var(
-        --conversations-boxes-background-color-active
-    ) !important;
+    --conversations-boxes-background-color-hover: var(--conversations-boxes-background-color-active) !important;
     --conversations-boxes-background-color-non-active: #fff !important;
     --conversations-boxes-border: 1px solid #dcdcdc !important;
     --conversations-boxes-shadow: 0 3px 6px rgb(0 0 0 / 11%) !important;
     --conversations-mail-background: #fff !important;
+
     /* Custom Loading Icon Screen - Gradient Colors */
     --custom-loading-icon-gradient-1: #222222 !important;
-    /* --custom-loading-icon-gradient-1: #ffffff !important; */
     --custom-loading-icon-gradient-2: #171717 !important;
-    /* --custom-loading-icon-gradient-2: #eeeeee !important; */
     --custom-loading-icon: url(https://storage.googleapis.com/msgsndr/OQaO9MqIzlk3UwCxW2No/media/61b38ca1a52fa8fa54e72a0c.png) !important;
-    /* Update URL */
     --custom-loading-icon-width: 350px !important;
     --custom-loading-icon-height: 143px !important;
-    /* Custom Sidebar Collapse Icon */
     --custom-sidebar-collapse-icon: url(https://storage.googleapis.com/msgsndr/OQaO9MqIzlk3UwCxW2No/media/61b38ca1a52fa8e205e72a0d.png) !important;
-    /* Update URL */
+
     /* Dashboard Styles */
-    --dashboard-button-background: var(
-        --master-primary-button-background-color
-    ) !important;
-    --dashboard-button-background-hover: var(
-        --master-primary-button-background-color-hover
-    ) !important;
-    --dashboard-button-border-color: 2px solid
-        var(--master-primary-button-border) !important;
-    --dashboard-button-border-color-hover: 2px solid
-        var(--master-primary-button-border-hover) !important;
+    --dashboard-button-background: var(--master-primary-button-background-color) !important;
+    --dashboard-button-background-hover: var(--master-primary-button-background-color-hover) !important;
+    --dashboard-button-border-color: 2px solid var(--master-primary-button-border) !important;
+    --dashboard-button-border-color-hover: 2px solid var(--master-primary-button-border-hover) !important;
     --dashboard-button-font-color: var(--master-white-color) !important;
     --dashboard-button-font-color-hover: var(--master-white-color) !important;
-    --dashboard-button-arrow-color: var(
-        --dashboard-button-font-color
-    ) !important;
-    --dashboard-button-arrow-color-hover: var(
-        --dashboard-button-font-color
-    ) !important;
+    --dashboard-button-arrow-color: var(--dashboard-button-font-color) !important;
+    --dashboard-button-arrow-color-hover: var(--dashboard-button-font-color) !important;
     --dashboard-buttons-border-radius: 50px !important;
     --dashboard-panels-background: #fff !important;
     --dashboard-panels-background-style-2: #ededed !important;
     --dashboard-panels-shadow: rgb(0 0 0 / 47%) 0px 19px 15px -20px !important;
-    /* rgb(0 0 0 / 55%) 0px 21px 20px -22px; OR 0 10px 20px rgb(0 0 0 / 5%); */
     --dashboard-panels-background-header: #0000 !important;
-    --dashboard-panels-background-header-borderline: var(
-        --panels-border
-    ) !important;
+    --dashboard-panels-background-header-borderline: var(--panels-border) !important;
     --dashboard-panel-text-closed: var(--master-green-color) !important;
     --dashboard-panel-text-open: var(--master-blue-color) !important;
     --dashboard-panel-text-lost: var(--master-red-color) !important;
     --dashboard-panel-border-radius: 8px !important;
     --panels-border: 1px solid #d9d9d9 !important;
+
     /* SMS and Email Pop Up Window */
-    --email-sms-header-background-color: var(
-        --dashboard-panels-background
-    ) !important;
+    --email-sms-header-background-color: var(--dashboard-panels-background) !important;
+
     /* Folder Styles */
     --folder-background: #fff !important;
     --folders-border: 1px solid #e1e1e1 !important;
+
     /* Forms */
     --forms-sidebar-border: 1px solid #edeade !important;
     --forms-sidebar-title-panels-background: #bdbdbd21 !important;
+
     /* Font-Headers */
     --font-page-header-color: var(--master-font-color-body) !important;
+
     /* Funnel Stats Charts */
-    --funnels-stats-panel-1-background: #56b641 !important;
+    --funnels-stats-panel-1-background: #0e3253 !important;
     --funnels-stats-panel-1-border: #a42e2e !important;
-    --funnels-stats-panel-2-background: #56b641 !important;
+    --funnels-stats-panel-2-background: #0e3253 !important;
     --funnels-stats-panel-2-border: #a42e2e !important;
-    --funnels-stats-panel-3-background: #56b641 !important;
+    --funnels-stats-panel-3-background: #0e3253 !important;
     --funnels-stats-panel-3-border: #a42e2e !important;
     --funnels-stats-panel-4-background: var(--master-green-color) !important;
     --funnels-stats-panel-4-border: #369c6b !important;
+
     /* Funnel Steps - Funnels */
     --funnel-steps-background-hover: #ffffff85 !important;
     --funnel-steps-background-active: #ffffff85 !important;
     --funnel-steps-background-non-active: #fbfbfb !important;
+
     /* Funnel Launch Checklist Styles */
     --funnel-launch-steps-background-active: #c0e4cd !important;
     --funnel-launch-steps-background-non-active: #c0e4cd !important;
     --funnel-launch-steps-background-hover: #f1f1f1 !important;
     --funnel-launch-steps-side-panel-overlay-color: #9f9f9f0f !important;
-    --funnel-launch-steps-side-panel-border-non-active: 1px solid
-        var(--funnel-launch-steps-icon-color-non-active) !important;
+    --funnel-launch-steps-side-panel-border-non-active: 1px solid #3a3a3a !important;
     --funnel-launch-steps-icon-color-non-active: #3a3a3a !important;
+
     /* Font Colors Misc */
     --font-color-opportunities-value: var(--master-green-color) !important;
     --font-leads-value-color: var(--master-orange-color) !important;
     --font-color-danger: var(--master-red-color) !important;
     --font-color-edit-button: var(--master-green-color) !important;
+
     /* Icons Colors */
     --pencil-icon-green: var(--master-green-color) !important;
     --close-x-button-red: var(--master-red-color) !important;
     --smart-lists-filter-icon-color: var(--master-table-font-color) !important;
     --fields-icon: var(--master-green-color) !important;
+
     /* Input Fields Styles */
     --input-field-background: #fff !important;
     --input-field-background-hover: #fafafa !important;
@@ -610,74 +495,61 @@
     --input-field-shadow: inset 0 0 10px #e5e7ea !important;
     --input-field-shadow-none: none !important;
     --input-field-border-radius: 5px !important;
+
     /* Image Preview Box Style */
     --image-preview-border: 2px dashed #e4e4e4 !important;
     --image-preview-border-websites: 2px dashed #c6c6c6 !important;
+
     /* Live Button Style */
-    --live-button-background-translucent: #3dac771f !important;
+    --live-button-background-translucent: #1898b21f !important;
     --live-button-font-color: var(--master-green-color) !important;
     --live-button-solid-background: var(--master-green-color) !important;
     --live-button-solid-font-color: #fff !important;
+
     /* Animated Notification Icon */
-    --new-notification-circle-topnav-background: var(
-        --master-green-color
-    ) !important;
+    --new-notification-circle-topnav-background: var(--master-green-color) !important;
     --new-notification-circle-topnav-border: 1px solid #67b891 !important;
     --new-notification-circle-topnav-shadow: 0 0 0 0 rgba(230, 230, 230, 0.7) !important;
-    --new-notification-circle-recent-activities-background: var(
-        --master-green-color
-    ) !important;
+    --new-notification-circle-recent-activities-background: var(--master-green-color) !important;
     --new-notification-circle-recent-activities-border: 1px solid #67b891 !important;
-    --new-notification-circle-recent-activities-shadow: 0 0 0 0
-        rgba(62, 172, 119, 0.31) !important;
-    --new-notification-circle-conversations-background: var(
-        --master-green-color
-    ) !important;
+    --new-notification-circle-recent-activities-shadow: 0 0 0 0 rgba(62, 172, 119, 0.31) !important;
+    --new-notification-circle-conversations-background: var(--master-green-color) !important;
     --new-notification-circle-conversations-border: 1px solid #67b891 !important;
-    --new-notification-circle-conversations-shadow: 0 0 0 0
-        rgba(62, 172, 119, 0.31) !important;
+    --new-notification-circle-conversations-shadow: 0 0 0 0 rgba(62, 172, 119, 0.31) !important;
+
     /* Main Background Color for CRM */
     --main-background-color: #fff
-        url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/textures/brilliant.png) repeat !important;
-    /*
-        url(https://www.transparenttextures.com/patterns/groovepaper.png) repeat !important;*/
+        url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/textures/brilliant.png)
+        repeat !important;
+
     /* Manual Action Circles Dashboard Gradient Colors */
     --manual-action-gradient-color-1: var(--master-primary-color) !important;
-    --manual-action-gradient-color-2: #4cc86a !important;
-    --manual-action-gradient-color-3: #53d170 !important;
+    --manual-action-gradient-color-2: #1898b2 !important;
+    --manual-action-gradient-color-3: #18a5c2 !important;
     --manual-action-font-color: var(--master-white-color) !important;
+
     /* My Recent Activities Panel */
     --my-recent-activities-border: 1px solid #dddddd80 !important;
-    --my-recent-activities-header-background: var(
-        --dashboard-panels-background
-    ) !important;
+    --my-recent-activities-header-background: var(--dashboard-panels-background) !important;
     --my-recent-activities-unread-panel-background: #e1fff1 !important;
     --my-recent-activities-unread-panel-background-hover: #d2f9e7 !important;
     --my-recent-activities-read-panel-background: #fdfdfd !important;
     --my-recent-activities-read-panel-background-hover: #f9f9f9 !important;
+
     /* Old Client Check In Button - Request Review Button */
-    --old-client-check-in-button-background: var(
-        --button-large-background
-    ) !important;
-    --old-client-check-in-button-background-hover: var(
-        --button-large-background-hover
-    ) !important;
+    --old-client-check-in-button-background: var(--button-large-background) !important;
+    --old-client-check-in-button-background-hover: var(--button-large-background-hover) !important;
     --old-client-check-in-button-border: var(--button-large-border) !important;
-    --old-client-check-in-button-border-hover: var(
-        --button-large-border-hover
-    ) !important;
-    --old-client-check-in-button-color: var(
-        --button-large-font-color
-    ) !important;
-    --old-client-check-in-button-color-hover: var(
-        --button-large-font-color-hover
-    ) !important;
+    --old-client-check-in-button-border-hover: var(--button-large-border-hover) !important;
+    --old-client-check-in-button-color: var(--button-large-font-color) !important;
+    --old-client-check-in-button-color-hover: var(--button-large-font-color-hover) !important;
     --old-client-check-in-border-radius: 50px !important;
     --old-client-check-in-button-margin-bottom: 15px !important;
     --old-client-check-in-button-padding-top: 7px !important;
     --old-client-check-in-button-padding-bottom: 7px !important;
     --old-client-check-in-button-shadow: none !important;
     --old-client-check-in-button-name: "Request Review" !important;
+
     /* Old Sidebar Style */
     --old-sidebar-menu-sidebar-shadow: 2px 0px 10px rgb(0 0 0 / 23%) !important;
     --old-sidebar-menu-background-active: #414141 !important;
@@ -687,17 +559,17 @@
     --old-sidebar-menu-font-color-hover: #fff !important;
     --old-sidebar-sub-menu-background: #fafafa !important;
     --old-sidebar-sub-menu-font-color: var(--master-font-color-body) !important;
-    --old-sidebar-sub-menu-font-color-hover: var(
-        --master-primary-color
-    ) !important;
+    --old-sidebar-sub-menu-font-color-hover: var(--master-primary-color) !important;
     --old-sidebar-sub-menu-shadow: 0px 0px 5px #00000061,
         inset 0px -1px 6px #0000001c !important;
     --old-sidebar-collapse-icon-width: 25px !important;
     --old-sidebar-collapse-icon-height: 48px !important;
     --old-sidebar-collapse-icon-top: 22px !important;
+
     /* Opportunities Cards */
     --opportunities-card-background: #fff !important;
     --opportunities-card-border-radius: inset 0px 0px 2px #00000057 !important;
+
     /* Opportunity Drag Cards - Won, Abandoned, Lost */
     --opportunity-drag-cards-lost-font-color: #fff !important;
     --opportunity-drag-cards-lost-background-color: #c74c4c !important;
@@ -708,16 +580,11 @@
     --opportunity-drag-cards-won-font-color: #fff !important;
     --opportunity-drag-cards-won-background-color: #3dac77 !important;
     --opportunity-drag-cards-won-background-color-hover: #369a69;
-    --opportunity-drag-cards-main-background-color: var(
-        --main-background-color
-    ) !important;
-    --opportunity-drag-cards-main-background-outline: var(
-        --panels-border
-    ) !important;
+    --opportunity-drag-cards-main-background-color: var(--main-background-color) !important;
+    --opportunity-drag-cards-main-background-outline: var(--panels-border) !important;
     --opportunity-drag-cards-main-background-shadow: 0 -10px 20px rgb(0 0 0 / 5%) !important;
-    --opportunity-drag-cards-main-background-transform: translateY(
-        -3px
-    ) !important;
+    --opportunity-drag-cards-main-background-transform: translateY(-3px) !important;
+
     /* Pagination Styles */
     --pagination-background-active: var(--master-primary-color) !important;
     --pagination-background-hover: #efefef !important;
@@ -726,9 +593,8 @@
     --pagination-border-style: var(--panels-border) !important;
     --pagination-font-color: #fff !important;
     --pagination-font-color-hover: var(--button-small-font-color) !important;
-    --pagination-font-color-non-active: var(
-        --master-font-color-body
-    ) !important;
+    --pagination-font-color-non-active: var(--master-font-color-body) !important;
+
     /* Phone Pop Up Style */
     --phone-pop-up-header-border: 2px solid #f2f7fa !important;
     --phone-pop-up-header-background: #f7f7f7 !important;
@@ -745,8 +611,8 @@
     --phone-inside-background: #fff !important;
     --phone-shadow: 0 1px 10px #000000 !important;
     --phone-device-select-font-color: var(--master-font-color-body) !important;
-    --phone-device-select-button-border-color: 2px solid
-        var(--master-font-color-body) !important;
+    --phone-device-select-button-border-color: 2px solid var(--master-font-color-body) !important;
+
     /* PMG Custom Login Theme Style A */
     --pmg-login-style-a-main-font: "Poppins", sans-serif !important;
     --pmg-login-style-a-primary-color: var(--master-primary-color) !important;
@@ -755,9 +621,7 @@
     --pmg-login-style-a-background-gradient-color-2: #282828 !important;
     --pmg-login-style-a-background-image: url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/textures/black-twill.png)
         repeat !important;
-    --pmg-login-style-a-secondary-bg-tone: var(
-        --master-primary-color
-    ) !important;
+    --pmg-login-style-a-secondary-bg-tone: var(--master-primary-color) !important;
     --pmg-login-style-a-inner-login-background: #fff !important;
     --pmg-login-style-a-logo: url("https://storage.googleapis.com/msgsndr/OQaO9MqIzlk3UwCxW2No/media/61b38ca1a52fa8fa54e72a0c.png") !important;
     --pmg-login-style-a-heading-font-color: #262626 !important;
@@ -765,35 +629,22 @@
     --pmg-login-style-a-input-bg: #0000 !important;
     --pmg-login-style-a-input-border: #cccccc !important;
     --pmg-login-style-a-error-font-color: #b13030 !important;
-    --pmg-login-style-a-forgot-pass-font-color: var(
-        --pmg-login-style-a-primary-color
-    ) !important;
-    --pmg-login-style-a-button-background: var(
-        --pmg-login-style-a-primary-color
-    ) !important;
-    --pmg-login-style-a-button-background-hover: var(
-        --pmg-login-style-a-primary-color
-    ) !important;
-    --pmg-login-style-a-button-border: var(
-        --pmg-login-style-a-button-background
-    ) !important;
-    --pmg-login-style-a-button-border-hover: var(
-        --pmg-login-style-a-button-background-hover
-    ) !important;
+    --pmg-login-style-a-forgot-pass-font-color: var(--pmg-login-style-a-primary-color) !important;
+    --pmg-login-style-a-button-background: var(--pmg-login-style-a-primary-color) !important;
+    --pmg-login-style-a-button-background-hover: var(--pmg-login-style-a-primary-color) !important;
+    --pmg-login-style-a-button-border: var(--pmg-login-style-a-button-background) !important;
+    --pmg-login-style-a-button-border-hover: var(--pmg-login-style-a-button-background-hover) !important;
     --pmg-login-style-a-button-font-color: #ffffff !important;
     --pmg-login-style-a-button-font-color-hover: #fff !important;
     --pmg-login-style-a-foot-note-font-color: #262626 !important;
-    --pmg-login-style-a-foot-note-font-color-link: var(
-        --pmg-login-style-a-primary-color
-    ) !important;
+    --pmg-login-style-a-foot-note-font-color-link: var(--pmg-login-style-a-primary-color) !important;
     --pmg-login-style-a-logo-width: 80% !important;
     --pmg-login-style-a-logo-height: 85px !important;
     --pmg-login-style-a-border-radius: 10px !important;
     --pmg-login-style-a-shadow: 0px 0px 5px 5px rgb(0 0 0 / 0.1) !important;
     --pmg-login-style-a-sign-in-font-size: 22px !important;
-    --pmg-login-style-a-radio-button-ring-color: var(
-        --pmg-login-style-a-primary-color
-    ) !important;
+    --pmg-login-style-a-radio-button-ring-color: var(--pmg-login-style-a-primary-color) !important;
+
     /* Power Dialer Styles */
     --power-dialer-phone-keys-background: #fbfbfb !important;
     --power-dialer-phone-keys-background-hover: #f5f5f5 !important;
@@ -801,60 +652,41 @@
     --power-dialer-phone-keys-border: 1px solid #ebebeb !important;
     --power-dialer-phone-keys-border-hover: 1px solid #e1e1e1 !important;
     --power-dialer-phone-keys-numbers: #3a3a3a !important;
+
     /* Reporting Stats */
-    --reporting-call-stats-header-background-color: var(
-        --dashboard-panels-background
-    ) !important;
-    /* Reporting Stats - Up and Down Stats */
-    --reporting-stats-going-up-background-color: var(
-        --master-green-color
-    ) !important;
+    --reporting-call-stats-header-background-color: var(--dashboard-panels-background) !important;
+    --reporting-stats-going-up-background-color: var(--master-green-color) !important;
     --reporting-stats-going-up-border: 1px solid var(--master-green-color) !important;
     --reporting-stats-going-up-font-color: var(--master-white-color) !important;
-    --reporting-stats-going-down-background-color: var(
-        --master-red-color
-    ) !important;
+    --reporting-stats-going-down-background-color: var(--master-red-color) !important;
     --reporting-stats-going-down-border: 1px solid var(--master-red-color) !important;
-    --reporting-stats-going-down-font-color: var(
-        --master-white-color
-    ) !important;
+    --reporting-stats-going-down-font-color: var(--master-white-color) !important;
     --reporting-stats-shadow: var(--dashboard-panels-shadow) !important;
+
     /* Reputation Panels */
-    --reputation-header-background-color: var(
-        --dashboard-panels-background
-    ) !important;
-    --reputation-button-small-toggle-background: var(
-        --clear-background
-    ) !important;
-    --reputation-button-small-toggle-background-hover: var(
-        --button-selector-contacts-background-hover
-    ) !important;
-    --reputation-button-small-toggle-border: var(
-        --input-field-border
-    ) !important;
-    --reputation-button-small-toggle-border-hover: var(
-        --reputation-button-small-toggle-background-hover
-    ) !important;
+    --reputation-header-background-color: var(--dashboard-panels-background) !important;
+    --reputation-button-small-toggle-background: var(--clear-background) !important;
+    --reputation-button-small-toggle-background-hover: var(--button-selector-contacts-background-hover) !important;
+    --reputation-button-small-toggle-border: var(--input-field-border) !important;
+    --reputation-button-small-toggle-border-hover: var(--reputation-button-small-toggle-background-hover) !important;
     --reputation-border-small-toggle-border-radius: 45px !important;
     --reputation-button-small-toggle-icon-color: #686868 !important;
     --reputation-button-small-toggle-icon-color-hover: #545454 !important;
-    /* Reputation Panel Icons */
     --reputation-icon-invites-goal-arrow: url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/icons/double-right-arrows.png)
         no-repeat !important;
     --reputation-icon-sentiment-happy-icon: url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/icons/happy-face-green.png)
         no-repeat !important;
     --reputation-icon-sentiment-sad-icon: url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/icons/sad-icon-red.png)
         no-repeat !important;
-    /* Reputation Reviews Page */
-    --reputation-reviews-panel-footer-comment-background: var(
-        --clear-background
-    ) !important;
+    --reputation-reviews-panel-footer-comment-background: var(--clear-background) !important;
+
     /* Search Bar Style */
     --search-bar-background: #fff !important;
     --search-bar-border: 1px #ccc solid !important;
     --search-bar-border-radius: 5px !important;
     --search-bar-shadow: inset 0 0 10px #e5e7ea !important;
     --search-bar-radius: 5px !important;
+
     /* Scrollbar Styles */
     --scrollbar-visibility-on: overlay !important;
     --scrollbar-visibility-hidden: hidden !important;
@@ -864,26 +696,21 @@
     --scrollbar-sidebar-track-border-radius: 100px !important;
     --scrollbar-sidebar-handle-background: #606060 !important;
     --scrollbar-sidebar-handle-background-hover: #606060 !important;
-    --scrollbar-opportunities-width: 7px;
-    --scrollbar-opportunities-track-background: #0000;
-    --scrollbar-opportunities-track-shadow: 0 0 6px rgba(44, 44, 44, 0);
-    --scrollbar-opportunities-track-border-radius: 100px;
-    --scrollbar-opportunities-handle-background: #e3e3e3;
-    --scrollbar-opportunities-handle-background-hover: #d3d3d3;
+    --scrollbar-opportunities-width: 7px !important;
+    --scrollbar-opportunities-track-background: #0000 !important;
+    --scrollbar-opportunities-track-shadow: 0 0 6px rgba(44, 44, 44, 0) !important;
+    --scrollbar-opportunities-track-border-radius: 100px !important;
+    --scrollbar-opportunities-handle-background: #e3e3e3 !important;
+    --scrollbar-opportunities-handle-background-hover: #d3d3d3 !important;
+
     /* Sidebar Main Styles */
     --sidebar-menu-height: 32px !important;
     --sidebar-menu-border-line: 1px dashed #fafafa !important;
-    --sidebar-gradient-1: #222222fc !important;
-    --sidebar-gradient-2: #1e1e1ef7 !important;
-    --sidebar-button-background: var(
-        --master-primary-button-background-color
-    ) !important;
-    --sidebar-button-background-hover: var(
-        --master-primary-button-background-color-hover
-    ) !important;
-    --sidebar-button-go-back-background: var(
-        --sidebar-dropdown-menu-background
-    ) !important;
+    --sidebar-gradient-1: #0e3253 !important; /* Dark navy from the logo swirl/text */
+    --sidebar-gradient-2: #1898b2 !important;  /* Teal to create a two-tone gradient */
+    --sidebar-button-background: var(--master-primary-button-background-color) !important;
+    --sidebar-button-background-hover: var(--master-primary-button-background-color-hover) !important;
+    --sidebar-button-go-back-background: #3b3b3b !important;
     --sidebar-button-go-back-background-hover: #414141 !important;
     --sidebar-button-go-back-font: #fff !important;
     --sidebar-button-go-back-font-hover: #fff !important;
@@ -901,16 +728,13 @@
     --sidebar-border-radius: 5px !important;
     --sidebar-popup-border: #d1d5db !important;
     --sidebar-popup-font-title: var(--master-font-color-body) !important;
-    --sidebar-popup-font-company-names: var(
-        --master-font-color-body
-    ) !important;
+    --sidebar-popup-font-company-names: var(--master-font-color-body) !important;
     --sidebar-popup-company-border-active: #dadada !important;
     --sidebar-popup-company-border-background: #f6f6f6 !important;
     --sidebar-shadow: 2px 0px 10px rgb(0 0 0 / 23%) !important;
+
     /* Sidebar Icons - Agency Sidebar */
-    --sidebar-agency-icons-agency-dashboard: var(
-        --sidebar-icons-dashboard
-    ) !important;
+    --sidebar-agency-icons-agency-dashboard: var(--sidebar-icons-dashboard) !important;
     --sidebar-agency-icons-saas-configurator: url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/icons/agency-saas-Icon.png) !important;
     --sidebar-agency-icons-accounts: url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/icons/agency-accounts-icon.png) !important;
     --sidebar-agency-icons-account-snapshots: url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/icons/account-snapshot-icon.png) !important;
@@ -923,6 +747,7 @@
     --sidebar-agency-icons-ideas: url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/icons/agency-ideas-icon.png) !important;
     --sidebar-agency-icons-academy: url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/icons/agency-saas-fasttrack.png) !important;
     --sidebar-agency-icons-settings: var(--sidebar-icons-settings) !important;
+
     /* Sidebar Icons - Client Sidebar */
     --sidebar-icons-launchpad: url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/icons/launch-pad-icon.png) !important;
     --sidebar-icons-dashboard: url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/icons/dashboard-icon-white.png) !important;
@@ -941,6 +766,7 @@
     --sidebar-icons-media-storage: url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/icons/media-storage-white.png) !important;
     --sidebar-icons-memberships: url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/icons/memberships.png) !important;
     --sidebar-icons-settings: url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/icons/settings-icon.png) !important;
+
     /* Sidebar - Menu Name Changes */
     --sidebar-menu-name-launch-pad: "Launch Pad" !important;
     --sidebar-menu-name-dashboard: "Dashboard" !important;
@@ -955,6 +781,7 @@
     --sidebar-menu-name-reputation: "Reputation" !important;
     --sidebar-menu-name-reporting: "Reporting" !important;
     --sidebar-menu-name-settings: "Settings" !important;
+
     /* Sidebar - Settings Menu Name Changes */
     --sidebar-settings-menu-name-business-info: "Business Info" !important;
     --sidebar-settings-menu-name-my-staff: "My Staff" !important;
@@ -971,9 +798,11 @@
     --sidebar-settings-menu-name-integrations: "Integrations" !important;
     --sidebar-settings-menu-name-smtp: "SMTP & Mailgun Services" !important;
     --sidebar-settings-menu-name-tags: "Tags" !important;
-    /* Sidebar - New Mneu Logo */
+
+    /* Sidebar - New Menu Logo */
     --new-menu-logo-max-width: 140px !important;
     --new-menu-logo-height: 55px !important;
+
     /* Sidebar - Old Menu Logo */
     --old-menu-logo-max-width: 75% !important;
     --old-menu-logo-max-height: 80px !important;
@@ -981,38 +810,27 @@
     --old-menu-logo-margin-bottom: -12px !important;
     --old-menu-collapse-icon: "\f005" !important;
     --old-menu-collapse-review-icon: "\f053" !important;
+
     /* Sidebar - Old Menu Icons */
-    --sidebar-old-menu-icon-launchpad: "\f135" !important;
-    /* PMG Standard "\f135" */
-    --sidebar-old-menu-icon-dashboard: "\f3fd" !important;
-    /* PMG Standard "\f3fd" */
-    --sidebar-old-menu-icon-conversations: "\f651" !important;
-    /* PMG Standard "\f651" */
-    --sidebar-old-menu-icon-opportunities: "\f550" !important;
-    /* PMG Standard "\f550" */
-    --sidebar-old-menu-icon-workflows: "\f0c3" !important;
-    /* PMG Standard "\f0c3" */
-    --sidebar-old-menu-icon-marketing: "\f674" !important;
-    /* PMG Standard "\f674" */
-    --sidebar-old-menu-icon-report: "\f200" !important;
-    /* PMG Standard "\f200" */
-    --sidebar-old-menu-icon-scheduling: "\f073" !important;
-    /* PMG Standard "\f073" */
-    --sidebar-old-menu-icon-reputation: "\f005" !important;
-    /* PMG Standard "\f005" */
-    --sidebar-old-menu-icon-contacts: "\f0c0" !important;
-    /* PMG Standard "\f0c0" */
-    --sidebar-old-menu-icon-funnel-and-websites: "\f0b0" !important;
-    /* PMG Standard "\f0b0" */
-    --sidebar-old-menu-icon-triggers: "\f126" !important;
-    /* PMG Standard "\f126" */
-    --sidebar-old-menu-icon-online-listings: "\f812" !important;
-    /* PMG Standard "\f812" */
-    --sidebar-old-menu-icon-chat-widget: "\f4ad" !important;
-    /* PMG Standard "\f4ad" */
-    --sidebar-old-menu-icon-settings: "\e97d" !important;
-    /* PMG Standard "\e97d" */
+    --sidebar-old-menu-icon-launchpad: "\f135" !important; /* PMG Standard "\f135" */
+    --sidebar-old-menu-icon-dashboard: "\f3fd" !important; /* PMG Standard "\f3fd" */
+    --sidebar-old-menu-icon-conversations: "\f651" !important; /* PMG Standard "\f651" */
+    --sidebar-old-menu-icon-opportunities: "\f550" !important; /* PMG Standard "\f550" */
+    --sidebar-old-menu-icon-workflows: "\f0c3" !important; /* PMG Standard "\f0c3" */
+    --sidebar-old-menu-icon-marketing: "\f674" !important; /* PMG Standard "\f674" */
+    --sidebar-old-menu-icon-report: "\f200" !important; /* PMG Standard "\f200" */
+    --sidebar-old-menu-icon-scheduling: "\f073" !important; /* PMG Standard "\f073" */
+    --sidebar-old-menu-icon-reputation: "\f005" !important; /* PMG Standard "\f005" */
+    --sidebar-old-menu-icon-contacts: "\f0c0" !important; /* PMG Standard "\f0c0" */
+    --sidebar-old-menu-icon-funnel-and-websites: "\f0b0" !important; /* PMG Standard "\f0b0" */
+    --sidebar-old-menu-icon-triggers: "\f126" !important; /* PMG Standard "\f126" */
+    --sidebar-old-menu-icon-online-listings: "\f812" !important; /* PMG Standard "\f812" */
+    --sidebar-old-menu-icon-chat-widget: "\f4ad" !important; /* PMG Standard "\f4ad" */
+    --sidebar-old-menu-icon-settings: "\e97d" !important; /* PMG Standard "\e97d" */
+
     /* Sidebar - Old Menu Names */
+    --sidebar-old-menu-name-launch
+
     --sidebar-old-menu-name-launchpad: "Launch Pad" !important;
     /* Standard - LaunchPad */
     --sidebar-old-menu-name-dashboard: "Dashboard" !important;
@@ -1185,13 +1003,17 @@
 /**********************************/
 
 /* Custom Header */
+/* Add your own final custom overrides below this line, if needed */
+
+/* Example brand-based gradient for the top navbar (optional). 
+   Adjust to your preferred combination of your dark navy + teal: */
 .hl_header .container-fluid {
     background: var(--top-navbar-style-gradient-header-1);
     background: -moz-linear-gradient(
             -45deg,
             var(--top-navbar-style-gradient-header-1) 0%,
-            var(--top-navbar-style-gradient-header-2) 59.5%,
-            var(--top-navbar-style-gradient-header-line-1) 59.5%,
+            var(--top-navbar-style-gradient-header-2) 60%,
+            var(--top-navbar-style-gradient-header-line-1) 60%,
             var(--top-navbar-style-gradient-header-line-2) 60%,
             var(--top-navbar-style-gradient-header-3) 60%,
             var(--top-navbar-style-gradient-header-4) 100%
@@ -1200,8 +1022,8 @@
     background: -webkit-linear-gradient(
             -45deg,
             var(--top-navbar-style-gradient-header-1) 0%,
-            var(--top-navbar-style-gradient-header-2) 59.5%,
-            var(--top-navbar-style-gradient-header-line-1) 59.5%,
+            var(--top-navbar-style-gradient-header-2) 60%,
+            var(--top-navbar-style-gradient-header-line-1) 60%,
             var(--top-navbar-style-gradient-header-line-2) 60%,
             var(--top-navbar-style-gradient-header-3) 60%,
             var(--top-navbar-style-gradient-header-4) 100%
@@ -1210,8 +1032,8 @@
     background: linear-gradient(
             135deg,
             var(--top-navbar-style-gradient-header-1) 0%,
-            var(--top-navbar-style-gradient-header-2) 59.5%,
-            var(--top-navbar-style-gradient-header-line-1) 59.5%,
+            var(--top-navbar-style-gradient-header-2) 60%,
+            var(--top-navbar-style-gradient-header-line-1) 60%,
             var(--top-navbar-style-gradient-header-line-2) 60%,
             var(--top-navbar-style-gradient-header-3) 60%,
             var(--top-navbar-style-gradient-header-4) 100%
@@ -1228,34 +1050,42 @@
 /*  Custom Header - Gradient Style   */
 /**************************************/
 /**************************************/
-/*
 .hl_header .container-fluid {
     background: var(--top-navbar-style-gradient-header-1);
     background: -moz-linear-gradient(
             -45deg,
             var(--top-navbar-style-gradient-header-1) 0%,
-            var(--top-navbar-style-gradient-header-2) 43%,
-            var(--top-navbar-style-gradient-header-3) 64%,
-            var(--top-navbar-style-gradient-header-4) 90%
+            var(--top-navbar-style-gradient-header-2) 60%,
+            var(--top-navbar-style-gradient-header-line-1) 60%,
+            var(--top-navbar-style-gradient-header-line-2) 60%,
+            var(--top-navbar-style-gradient-header-3) 60%,
+            var(--top-navbar-style-gradient-header-4) 100%
         ),
         url(https://www.transparenttextures.com/patterns/black-twill.png) repeat !important;
     background: -webkit-linear-gradient(
             -45deg,
             var(--top-navbar-style-gradient-header-1) 0%,
-            var(--top-navbar-style-gradient-header-2) 43%,
-            var(--top-navbar-style-gradient-header-3) 64%,
-            var(--top-navbar-style-gradient-header-4) 90%
+            var(--top-navbar-style-gradient-header-2) 60%,
+            var(--top-navbar-style-gradient-header-line-1) 60%,
+            var(--top-navbar-style-gradient-header-line-2) 60%,
+            var(--top-navbar-style-gradient-header-3) 60%,
+            var(--top-navbar-style-gradient-header-4) 100%
         ),
         url(https://www.transparenttextures.com/patterns/black-twill.png) repeat !important;
     background: linear-gradient(
             135deg,
             var(--top-navbar-style-gradient-header-1) 0%,
-            var(--top-navbar-style-gradient-header-2) 43%,
-            var(--top-navbar-style-gradient-header-3) 64%,
-            var(--top-navbar-style-gradient-header-4) 90%
+            var(--top-navbar-style-gradient-header-2) 60%,
+            var(--top-navbar-style-gradient-header-line-1) 60%,
+            var(--top-navbar-style-gradient-header-line-2) 60%,
+            var(--top-navbar-style-gradient-header-3) 60%,
+            var(--top-navbar-style-gradient-header-4) 100%
         ),
         url(https://www.transparenttextures.com/patterns/black-twill.png) repeat !important;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--top-navbar-style-gradient-header-1)', endColorstr='var(--top-navbar-style-gradient-header-1)',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--top-navbar-style-gradient-header-1)', endColorstr='var(--top-navbar-style-gradient-header-1)', GradientType=1);
+    box-shadow: 2px 0px 4px 3px #2e2e2e61 !important;
+    padding: 10px 20px !important;
+    border-bottom: 0px solid #fff;
 }
 */
 /****************************************/
@@ -1345,7 +1175,7 @@ div#sidebar-v2 {
             var(--sidebar-gradient-2) 100%
         ),
         url(https://pimp-my-ghl.s3.us-west-2.amazonaws.com/theme-assets/textures/black-twill.png) repeat !important;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--sidebar-gradient-1)', endColorstr='var(sidebar-gradient-2)', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--sidebar-gradient-1)', endColorstr='var(--sidebar-gradient-2)', GradientType=1);
     box-shadow: var(--sidebar-shadow) !important;
 }
 
