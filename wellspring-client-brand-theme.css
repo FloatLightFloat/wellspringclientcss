@@ -1009,14 +1009,12 @@
    Adjust to your preferred combination of your dark navy + teal: */
 /* Custom Header - Brand Gradient */
 .hl_header .container-fluid {
-  /* A fully written out gradient using your brand colors:
-     Dark Navy (#0e3253) at 0%, Teal (#1898b2) at 50%, 
-     Lighter Teal (#18a5c2) at 75%, then back to Dark Navy (#0e3253) at 100% */
-  background: linear-gradient(135deg, #0e3253 0%, #1898b2 50%, #18a5c2 75%, #0e3253 100%), 
-              url(https://www.transparenttextures.com/patterns/black-twill.png) repeat;
-  box-shadow: 2px 0px 4px 3px rgba(46, 46, 46, 0.38);
-  padding: 10px 20px;
-  border-bottom: 0;
+  /* Fully written-out gradient using your brand colors */
+  background: linear-gradient(135deg, #0e3253 0%, #1898b2 50%, #18a5c2 75%, #0e3253 100%) !important,
+              url(https://www.transparenttextures.com/patterns/black-twill.png) repeat !important;
+  box-shadow: 2px 0px 4px 3px rgba(46, 46, 46, 0.38) !important;
+  padding: 10px 20px !important;
+  border-bottom: 0 !important;
 }
 
 /**************************************/
@@ -1024,6 +1022,7 @@
 /*  Custom Header - Gradient Style   */
 /**************************************/
 /**************************************/
+/*
 .hl_header .container-fluid {
     background: var(--top-navbar-style-gradient-header-1);
     background: -moz-linear-gradient(
