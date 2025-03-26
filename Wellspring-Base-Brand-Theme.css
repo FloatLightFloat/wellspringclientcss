@@ -1601,47 +1601,12 @@ body {
     height: 50px !important;
 }
 
-.hl_header .container-fluid
-/* Custom Header */ {
-    background: var(--top-navbar-style-gradient-header-1);
-    background: -moz-linear-gradient(
-            -45deg,
-            var(--top-navbar-style-gradient-header-1) 0%,
-            var(--top-navbar-style-gradient-header-2) 59.5%,
-            var(--top-navbar-style-gradient-header-line-1) 59.5%,
-            var(--top-navbar-style-gradient-header-line-2) 60%,
-            var(--top-navbar-style-gradient-header-3) 60%,
-            var(--top-navbar-style-gradient-header-4) 100%
-        ),
-        url(https://www.transparenttextures.com/patterns/black-twill.pngg)
-            repeat !important;
-    background: -webkit-linear-gradient(
-            -45deg,
-            var(--top-navbar-style-gradient-header-1) 0%,
-            var(--top-navbar-style-gradient-header-2) 59.5%,
-            var(--top-navbar-style-gradient-header-line-1) 59.5%,
-            var(--top-navbar-style-gradient-header-line-2) 60%,
-            var(--top-navbar-style-gradient-header-3) 60%,
-            var(--top-navbar-style-gradient-header-4) 100%
-        ),
-        url(https://www.transparenttextures.com/patterns/black-twill.pngg)
-            repeat !important;
-    background: linear-gradient(
-            135deg,
-            var(--top-navbar-style-gradient-header-1) 0%,
-            var(--top-navbar-style-gradient-header-2) 59.5%,
-            var(--top-navbar-style-gradient-header-line-1) 59.5%,
-            var(--top-navbar-style-gradient-header-line-2) 60%,
-            var(--top-navbar-style-gradient-header-3) 60%,
-            var(--top-navbar-style-gradient-header-4) 100%
-        ),
-        url(https://www.transparenttextures.com/patterns/black-twill.pngg)
-            repeat !important;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--top-navbar-style-gradient-header-1)', endColorstr='var(--top-navbar-style-gradient-header-1)', GradientType=1);
-    box-shadow: none;
-    padding: 10px 20px !important;
-    border-bottom: 0px solid #fff;
-    border-bottom: 1px solid #dbdbdb70;
+.hl_header .container-fluid {
+  background: linear-gradient(135deg, #0e3253 0%, #1898b2 50%, #18a5c2 75%, #0e3253 100%), 
+              url(https://www.transparenttextures.com/patterns/black-twill.png) repeat !important;
+  box-shadow: 2px 0px 4px 3px rgba(46, 46, 46, 0.38) !important;
+  padding: 10px 20px !important;
+  border-bottom: 1px solid #dbdbdb70 !important;
 }
 
 .sidebar-v2-location .hl_header {
