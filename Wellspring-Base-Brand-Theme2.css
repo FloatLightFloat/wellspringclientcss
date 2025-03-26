@@ -1609,119 +1609,127 @@ body {
   border-bottom: 1px solid #dbdbdb70 !important;
 }
 
+/* Adjust header alignment for location view */
 .sidebar-v2-location .hl_header {
-    /* Adjust Alignment */
-    top: -3px;
-    margin-left: 0px;
+  top: -3px;
+  margin-left: 0px;
 }
 
-.sidebar-v2-agency .hl_header .container-fluid {
-    height: 50px !important;
-    /* End Top Navbar Height */
+/* Set header container height and brand gradient for both agency and location views */
+.sidebar-v2-agency .hl_header .container-fluid,
+.sidebar-v2-location .hl_header .container-fluid {
+  height: 50px !important;
+  /* Brand gradient: Dark Navy (#0e3253) -> Teal (#1898b2) -> Lighter Teal (#18a5c2) -> Dark Navy (#0e3253) */
+  background: linear-gradient(135deg, #0e3253 0%, #1898b2 50%, #18a5c2 75%, #0e3253 100%),
+              url(https://www.transparenttextures.com/patterns/black-twill.png) repeat !important;
+  box-shadow: none;
+  padding: 10px 20px !important;
+  border-bottom: 1px solid rgba(219, 219, 219, 0.44) !important;
 }
 
+/* Sidebar menu button styling for agency view */
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover {
-    /******************************/
-    /*  Custom Sidebar   */
-    /* Sidebar Menu Button Agency */
-    background: var(--sidebar-button-background-hover) !important;
-    text-decoration: none !important;
+  background: var(--sidebar-button-background-hover) !important;
+  text-decoration: none !important;
 }
 
+/* Sidebar menu button hover for agency view */
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover {
-    /* Sidebar Menu Button Hover Agency */
-    background: var(--sidebar-button-background-hover) !important;
-    text-decoration: none !important;
+  background: var(--sidebar-button-background-hover) !important;
+  text-decoration: none !important;
 }
 
+/* Sidebar menu button styling for location view */
 .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
 .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover {
-    /* Sidebar Menu Button - Sub Account View */
-    background: var(--sidebar-button-background-hover) !important;
-    text-decoration: none !important;
-    transition: 0.2s !important;
+  background: var(--sidebar-button-background-hover) !important;
+  text-decoration: none !important;
+  transition: 0.2s !important;
 }
 
+/* Sidebar menu button styling for view without footer in agency view */
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
-    background: var(--sidebar-button-background-hover) !important;
-    text-decoration: none !important;
+  background: var(--sidebar-button-background-hover) !important;
+  text-decoration: none !important;
 }
 
+/* Sidebar menu font settings for location view */
 .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a {
-    /* Sidebar Menu Font - Sub Account Video */
-    opacity: 1;
-    max-height: 34px;
+  opacity: 1;
+  max-height: 34px;
 }
 
+/* Avatar styling in customer popup */
 .mx-1.flex.flex-col.justify-center.items-center.bg-gray-200.font-medium.text-sm.h-6.w-6.rounded-full.capitalize {
-    /* Avatar in Customer Popup */
-    background: var(--avatar-circle-background-color) !important;
-    color: var(--avatar-font-color) !important;
+  background: var(--avatar-circle-background-color) !important;
+  color: var(--avatar-font-color) !important;
 }
 
-.sidebar-v2-location
-    #sidebar-v2
-    #location-switcher-sidbar-v2
-    .hl_v2-location_switcher
-    #switcher-agency-switch
-    svg
-    rect {
-    /* Customer Popup - Back Button Style */
-    fill: var(--master-black-color) !important;
-    /* Sidebar Menu Button Hover - Sub Account View */
+/* Location Switcher Sidebar Styling */
+/* Applies to both agency and location views. Ensure the element ID is correct (e.g. “location-switcher-sidbar-v2”) */
+.sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2,
+.sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 {
+  background: linear-gradient(45deg, #0e3253 0%, #1898b2 100%) !important;
+  color: #fff !important;
+  padding: 10px !important;
+  border: 1px solid rgba(219, 219, 219, 0.44) !important;
 }
 
+/* Customer Popup – Back Button within Location Switcher */
+.sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher #switcher-agency-switch svg rect {
+  fill: var(--master-black-color) !important;
+}
+
+/* Remove rounded corners for elements with .rounded-md class */
 .rounded-md {
-    /* Update Rounded Button Effect */
-    border-radius: 0rem;
-    border-top-left-radius: 0rem;
-    border-top-right-radius: 0rem;
-    border-bottom-right-radius: 0rem;
-    border-bottom-left-radius: 0rem;
-    /* End Sidebar Menu Button */
+  border-radius: 0rem !important;
+  border-top-left-radius: 0rem !important;
+  border-top-right-radius: 0rem !important;
+  border-bottom-right-radius: 0rem !important;
+  border-bottom-left-radius: 0rem !important;
 }
 
+/* Sidebar Button Active Font for Agency View */
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a {
-    /* Sidebar Button Active Font */
-    opacity: 1;
-    /* End Sidebar Button Active Font */
+  opacity: 1;
 }
 
+/* New Badge Button */
 .hl_new_badge {
-    /* New Badge Button */
-    margin: -16px 10px 0 10px !important;
-    color: var(--badge-new-badge-font-color) !important;
-    background: var(--badge-new-badge-background) !important;
-    margin-top: -1px !important;
-    padding: 2px 6px !important;
-    border: var(--badge-new-badge-border) !important;
+  margin: -16px 10px 0 10px !important;
+  color: var(--badge-new-badge-font-color) !important;
+  background: var(--badge-new-badge-background) !important;
+  margin-top: -1px !important;
+  padding: 2px 6px !important;
+  border: var(--badge-new-badge-border) !important;
 }
 
+/* Sidebar Collapse Button for Agency View */
 .sidebar-v2-agency #sidebar-v2 .hl_collapse-button {
-    /* Sidebar - Collapse Button - Agency View */
-    background: var(--sidebar-collapse-button-background) !important;
-    color: var(--sidebar-collapse-icon-arrow-color) !important;
-    margin-bottom: 9px !important;
+  background: var(--sidebar-collapse-button-background) !important;
+  color: var(--sidebar-collapse-icon-arrow-color) !important;
+  margin-bottom: 9px !important;
 }
 
 .sidebar-v2-agency #sidebar-v2 .hl_collapse-button:hover {
-    /* Sidebar - Collapse Button - Agency View */
-    -webkit-animation: pulse-collapse 2s infinite;
-    animation: pulse-collapse 2s infinite;
+  -webkit-animation: pulse-collapse 2s infinite;
+  animation: pulse-collapse 2s infinite;
 }
 
+/* Sidebar Collapse Button for Location View */
 .sidebar-v2-location #sidebar-v2 .hl_collapse-button {
-    /* Sidebar - Collapse Button - Sub Account View */
-    background: var(--sidebar-collapse-button-background) !important;
-    color: var(--sidebar-collapse-icon-arrow-color) !important;
+  background: var(--sidebar-collapse-button-background) !important;
+  color: var(--sidebar-collapse-icon-arrow-color) !important;
 }
 
+/* Sidebar Top Dropdown Menu for Agency View */
+/* (This rule can be left as is or merged with the location switcher rule above if desired) */
 .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 {
-    /* Sidebar - Top Dropdown Menu - Agency View */
-    background-color: var(--sidebar-dropdown-menu-background) !important;
+  background-color: var(--sidebar-dropdown-menu-background) !important;
 }
+
 
 .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 {
     /* Sidebar - Top Dropdown Menu - Sub Account View */
