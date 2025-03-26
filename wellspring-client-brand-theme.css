@@ -1008,41 +1008,21 @@
 /* Example brand-based gradient for the top navbar (optional). 
    Adjust to your preferred combination of your dark navy + teal: */
 .hl_header .container-fluid {
-    background: var(--top-navbar-style-gradient-header-1);
-    background: -moz-linear-gradient(
-            -45deg,
-            var(--top-navbar-style-gradient-header-1) 0%,
-            var(--top-navbar-style-gradient-header-2) 60%,
-            var(--top-navbar-style-gradient-header-line-1) 60%,
-            var(--top-navbar-style-gradient-header-line-2) 60%,
-            var(--top-navbar-style-gradient-header-3) 60%,
-            var(--top-navbar-style-gradient-header-4) 100%
-        ),
-        url(https://www.transparenttextures.com/patterns/black-twill.png) repeat !important;
-    background: -webkit-linear-gradient(
-            -45deg,
-            var(--top-navbar-style-gradient-header-1) 0%,
-            var(--top-navbar-style-gradient-header-2) 60%,
-            var(--top-navbar-style-gradient-header-line-1) 60%,
-            var(--top-navbar-style-gradient-header-line-2) 60%,
-            var(--top-navbar-style-gradient-header-3) 60%,
-            var(--top-navbar-style-gradient-header-4) 100%
-        ),
-        url(https://www.transparenttextures.com/patterns/black-twill.png) repeat !important;
-    background: linear-gradient(
-            135deg,
-            var(--top-navbar-style-gradient-header-1) 0%,
-            var(--top-navbar-style-gradient-header-2) 60%,
-            var(--top-navbar-style-gradient-header-line-1) 60%,
-            var(--top-navbar-style-gradient-header-line-2) 60%,
-            var(--top-navbar-style-gradient-header-3) 60%,
-            var(--top-navbar-style-gradient-header-4) 100%
-        ),
-        url(https://www.transparenttextures.com/patterns/black-twill.png) repeat !important;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--top-navbar-style-gradient-header-1)', endColorstr='var(--top-navbar-style-gradient-header-1)', GradientType=1);
-    box-shadow: 2px 0px 4px 3px #2e2e2e61 !important;
-    padding: 10px 20px !important;
-    border-bottom: 0px solid #fff;
+  /* For Firefox */
+  background: -moz-linear-gradient(-45deg, #0e3253 0%, #1898b2 100%) !important,
+              url(https://www.transparenttextures.com/patterns/black-twill.png) repeat !important;
+  /* For Chrome, Safari, Opera */
+  background: -webkit-linear-gradient(-45deg, #0e3253 0%, #1898b2 100%) !important,
+              url(https://www.transparenttextures.com/patterns/black-twill.png) repeat !important;
+  /* Standard syntax */
+  background: linear-gradient(135deg, #0e3253 0%, #1898b2 100%) !important,
+              url(https://www.transparenttextures.com/patterns/black-twill.png) repeat !important;
+  /* IE fallback */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e3253', endColorstr='#1898b2', GradientType=1) !important;
+  
+  box-shadow: 2px 0px 4px 3px #2e2e2e61 !important;
+  padding: 10px 20px !important;
+  border-bottom: 0 !important;
 }
 
 /**************************************/
